@@ -1,0 +1,16 @@
+public class Main{
+    static int MinMax(int[] arr){
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for(int x : arr){
+            min = Math.min(min,x);
+            max = Math.max(max,x);
+        }
+        int difference = max - min;
+        return difference;
+    }
+    public static void main(String[] args){
+        int[] arr = {10, 3, 7, 1, 5};
+        System.out.println(MinMax(arr));
+    }
+}
